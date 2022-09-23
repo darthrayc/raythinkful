@@ -29,7 +29,7 @@ h1{
 /*Styling of div class: sdp for the first paragraph element within header*/
 .sdp{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 10;
     letter-spacing: 2px;
     translate: -555px 30px;
@@ -41,7 +41,7 @@ h1{
     display: flex;
     justify-content: space-around;
     width: 30%;
-    color: #2E8BC0;
+    color: white;
     font-size: 20px;
 }
 
@@ -51,7 +51,7 @@ nav a{
     width: 20%;
     font-size: 20px;
     text-decoration: none;
-    border: #2E8BC0;
+    border: white;
     border-style: solid;
     border-radius: 10%;
     padding: 10px;
@@ -59,26 +59,27 @@ nav a{
 
 /*Pseudo-classes for navlinks*/
 nav a:link{
-    color: #2E8BC0;
+    color: white;
 }
 
+/*pseudo-class for hovering over navlinks*/
 nav a:hover{
-    color: white;
+    color: #2E8BC0;
     cursor: pointer;
 }
 
+/*pseudo-class for showing you have visited the page*/
 a:visited{
-    color: #000C66
+    color: #189AB4;
 }
 
 /*Adjustments for container div class in HTML*/
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   float: left;
+   margin-left: 15vh;
 }
 
-
+/*Img is being given a border radius to transofrm image into a circle*/
 img{
     margin-right: 20vh;
     border-radius: 50%;
@@ -90,9 +91,13 @@ span.blue{
 }
 
 .intro{
+    display: flex;
+    justify-content: center;
     line-height: 5vh;
+    margin-right: 15vh;
 }
 
+/*adjusting font size for all h2 sections*/
 h2{
     font-size: 50px;
 }
@@ -104,6 +109,7 @@ hr{
     margin-bottom: 15vh;
 }
 
+/*adjustments for only the about section, display, color, height, and alignments*/
 #About{
     display: flex;
     justify-content: center;
@@ -115,6 +121,7 @@ hr{
     margin: 5vh;
 }
 
+/*adjusting font size for only paragraph sections*/
 p{
     font-size: 25px;
 }
@@ -124,6 +131,7 @@ span.thinkful{
     color:#2E8BC0;
 }
 
+/*adjusting the alignment and font-size for all h3 elements*/
 h3{
     text-align: center;
     font-size: 30px;
@@ -139,10 +147,11 @@ h3{
     color: black;
     text-align: left;
     margin-left: 30vh;
+    line-height: 5vh;
 }
 
 .edu{
-    display: inline-block;
+    display: inline-block; /*This display gives the ability for this section to align to the right of the work section*/
     border: #0C2D48;
     border-style: solid;
     border-width: 8px;
@@ -150,6 +159,7 @@ h3{
     width: 30%;
     color: black;
     margin-left: 10vh;
+    line-height: 5vh;
 }
 
 #Contact{
@@ -157,19 +167,20 @@ h3{
     justify-content: center;
 }
 
+/*adjustment alignment and line-height for the ol within the contact me section*/
 .contol{
-    align-items: left;
+    float: left;
     line-height: 5vh;
 }
 
 iframe{
+    float: right;
     margin-left: 5vh;
 }
 
 footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background-color: #0C2D48;
     color: white;
     height: 10vh;
